@@ -79,3 +79,101 @@
     .menu-toggle {
         display: none;
     }
+
+  /* That css style apply on the footer
+
+    /* Basic reset for padding, margin, and box sizing */
+    
+    /* Footer styles */
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 50px 0;
+        position: relative;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* 3D effect for headings */
+    footer h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Footer content styles */
+    .footer-about, .footer-links, .footer-social {
+        width: 30%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .footer-about:hover, .footer-links:hover, .footer-social:hover {
+        transform: translateY(-10px);
+    }
+
+    /* Footer links */
+    .footer-links ul, .footer-social ul {
+        list-style-type: none;
+    }
+
+    .footer-links ul li, .footer-social ul li {
+        margin-bottom: 10px;
+    }
+
+    .footer-links ul li a, .footer-social ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+
+    /* Hover effect for links */
+    .footer-links ul li a:hover, .footer-social ul li a:hover {
+        color: #00bcd4;
+    }
+
+    /* Social media icons and links */
+    .footer-social ul li a::before {
+        content: "•";
+        color: #00bcd4;
+        margin-right: 10px;
+    }
+
+    /* Footer bottom */
+    .footer-bottom {
+        text-align: center;
+        margin-top: 30px;
+        padding: 20px;
+        background-color: #222;
+        color: #888;
+    }
+
+    /* Footer bottom text 3D effect */
+    .footer-bottom p {
+        font-size: 16px;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Responsive design for small screens */
+    @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer-about, .footer-links, .footer-social {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+    }
